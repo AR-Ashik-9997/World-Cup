@@ -1,7 +1,217 @@
-/* Google Font Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* --------------------
+   Google Font Poppins
+   ------------------ */
 
-/* Common Style */
-body{
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* -----------------
+   Universal Style
+   --------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------
+        Common Style 
+   ---------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----------------------------
+           header style
+   -------------------------- */
+
+header {
+  width: 1321px;
+  height: 646px;
+  margin: auto;
+  margin-top: 50px;
+}
+.header-container {
+  display: flex;
+  gap: 24px;
+  background: #161616;
+  border-radius: 30px;
+}
+.header-title {
+  margin-left: 105px;
+  margin-top: 110px;
+  height: 424px;
+  color: #ffffff;
+}
+.header-title h1 {
+  margin: 0;
+  font-size: 70px;
+}
+.header-title p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.header-title a {
+  padding: 16px 25px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #dd0000;
+  border-radius: 5px;
+}
+.icon {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.banner {
+  margin-top: 33px;
+  margin-right: 79px;
+}
+.banner img {
+  width: 581px;
+  height: 613px;
+}
+
+/* ------------------------
+     side navigation style 
+   -----------------------*/
+
+.main-container {
+  display: flex;
+  margin-top: 130px;
+  column-gap: 24px;
+  margin-bottom: 130px;
+}
+.side-container {
+  background-color: #161616;
+  border-radius: 10px;
+  width: 312px;
+  height: 312px;
+  margin-left: 285px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav button {
+  margin-top: 30px;
+  width: 252px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+nav button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #161616;
+}
+#blog-btn {
+  background: #dd0000;
+}
+#blog-btn a {
+  color: #ffffff;
+}
+
+/* ------------------
+     right-side-area 
+   ------------------*/
+
+.right-side-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 24px;
+}
+.blogs {
+  width: 312px;
+  height: 362px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.blog-banner img {
+  width: 312px;
+  height: 175px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-btn {
+  font-size: 16px;
+  color: #161616;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  padding: 5px 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.blog-title {
+  margin: 15px;
+  font-size: 18px;
+  color: #161616;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 15px;
+  color: rgba(22, 22, 22, 0.7);
+}
+.icon-container p {
+  font-display: 16px;
+}
+.fa-clock,
+.fa-comment-dots {
+  font-size: 24px;
+}
+.fa-comment-dots {
+  margin-left: 30px;
+}
+
+/* ------------------
+      footer style
+   ---------------- */
+
+footer {
+  background: #161616;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+.footer-title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 130px;
+  margin: 0;
+}
+.line hr {
+  margin-top: 50px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-item {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  color: #b9b9b9;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.social-icon {
+  padding-top: 16px;
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.social-icon a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.social {
+  padding-left: 16px;
 }
