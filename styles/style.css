@@ -113,9 +113,9 @@ nav button a {
   color: #ffffff;
 }
 
-/* ------------------
-     right-side-area 
-   ------------------*/
+/* ---------------------------------
+     right-side-area for index.html 
+   ---------------------------------*/
 
 .right-side-area {
   display: grid;
@@ -166,6 +166,70 @@ nav button a {
 .fa-comment-dots {
   margin-left: 30px;
 }
+/* ------------------------------------------------
+     right-side-area style for upcoming match.html 
+   -----------------------------------------------*/
+
+   .match-blogs {
+    width: 312px;
+    height: 242px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+  }
+  .match-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    column-gap: 20px;
+  }
+  .match-banner p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .match-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #161616;
+  }
+  .match-date {
+    text-align: center;
+    font-size: 16px;
+    color: #4d4d4d;
+    margin-top: 10px;
+  }
+  
+  /* -----------------------------
+       Media Query for index.html 
+     ----------------------------*/
+  /* @media screen and (min-width: 768px) and (max-width: 992px) {
+    .main-container {
+      flex-direction: column;
+      margin-top: 70px;
+    }
+    nav {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .side-container {
+      background-color: rgb(255, 255, 255);
+      width: 900px;
+      height: 130px;
+      margin-left: 0;
+    }
+    nav button {
+      margin-left: 22px;    
+    }
+    .right-side-area {
+      
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      gap: 0px;
+    }
+  } */
+  
 
 /* ------------------
       footer style
