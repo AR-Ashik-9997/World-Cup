@@ -18,35 +18,34 @@
    ---------------------*/
 body {
   font-family: "Poppins", sans-serif;
+  clear: both;
 }
 
 /* ----------------------------
            header style
    -------------------------- */
 
-header {
-  width: 1321px;
-  height: 646px;
-  margin: auto;
-  margin-top: 50px;
-}
 .header-container {
   display: flex;
   gap: 24px;
-  background: #161616;
+  background: #010c20;
   border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 0;
 }
-.header-title {
-  margin-left: 105px;
-  margin-top: 110px;
-  height: 424px;
-  color: #ffffff;
+.banner {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 0;
 }
 .header-title h1 {
-  margin: 0;
-  font-size: 70px;
+  font-size: 60px;
+  color: #ffffff;
 }
 .header-title p {
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 30px;
 }
@@ -61,31 +60,34 @@ header {
   font-size: 16px;
   padding-left: 10px;
 }
-.banner {
-  margin-top: 33px;
-  margin-right: 79px;
+.right-image {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-.banner img {
-  width: 581px;
-  height: 613px;
+.right-image img {
+  width: 90%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
 }
 
 /* ------------------------
      side navigation style 
    -----------------------*/
 
-.main-container {
+.blog-section {
+  width: 80%;
   display: flex;
-  margin-top: 130px;
-  column-gap: 24px;
-  margin-bottom: 130px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 100px;
 }
 .side-container {
-  background-color: #161616;
+  background-color: #020f1f;
   border-radius: 10px;
   width: 312px;
-  height: 312px;
-  margin-left: 285px;
+  height: 280px;
+  margin-left: 30px;
 }
 
 nav {
@@ -94,17 +96,18 @@ nav {
   align-items: center;
 }
 nav button {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 252px;
   height: 64px;
   background: #ffffff;
   border-radius: 10px;
+  /* margin: auto;   */
 }
 nav button a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
-  color: #161616;
+  color: #020f1f;
 }
 #blog-btn {
   background: #dd0000;
@@ -122,6 +125,7 @@ nav button a {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 24px;
+  margin-bottom: 100px;
 }
 .blogs {
   width: 312px;
@@ -130,15 +134,15 @@ nav button a {
   border-radius: 10px;
 }
 .blog-banner img {
-  width: 312px;
+  width: 100%;
   height: 175px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .blog-btn {
   font-size: 16px;
-  color: #161616;
-  border: 1px solid #161616;
+  color: #020f1f;
+  border: 1px solid #020f1f;
   border-radius: 5px;
   padding: 5px 16px;
   margin-left: 15px;
@@ -147,14 +151,14 @@ nav button a {
 .blog-title {
   margin: 15px;
   font-size: 18px;
-  color: #161616;
+  color: #020f1f;
 }
 .icon-container {
   display: flex;
   align-items: center;
   column-gap: 10px;
   margin: 15px;
-  color: rgba(22, 22, 22, 0.7);
+  color: rgba(1, 12, 26, 0.7);
 }
 .icon-container p {
   font-display: 16px;
@@ -170,73 +174,43 @@ nav button a {
      right-side-area style for upcoming match.html 
    -----------------------------------------------*/
 
-   .match-blogs {
-    width: 312px;
-    height: 242px;
-    border: 1px solid #e8e8e8;
-    border-radius: 10px;
-  }
-  .match-banner {
-    display: flex;
-    justify-content: center;
-    margin-top: 53px;
-    column-gap: 20px;
-  }
-  .match-banner p {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .match-title {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #161616;
-  }
-  .match-date {
-    text-align: center;
-    font-size: 16px;
-    color: #4d4d4d;
-    margin-top: 10px;
-  }
-  
-  /* -----------------------------
-       Media Query for index.html 
-     ----------------------------*/
-  /* @media screen and (min-width: 768px) and (max-width: 992px) {
-    .main-container {
-      flex-direction: column;
-      margin-top: 70px;
-    }
-    nav {
-      flex-direction: row;
-      justify-content: center;
-    }
-    .side-container {
-      background-color: rgb(255, 255, 255);
-      width: 900px;
-      height: 130px;
-      margin-left: 0;
-    }
-    nav button {
-      margin-left: 22px;    
-    }
-    .right-side-area {
-      
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      gap: 0px;
-    }
-  } */
-  
+.match-blogs {
+  width: 312px;
+  height: 242px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.match-banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 53px;
+  column-gap: 20px;
+}
+.match-banner p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.match-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #020f1f;
+}
+.match-date {
+  text-align: center;
+  font-size: 16px;
+  color: #020f1f;
+  margin-top: 10px;
+}
 
 /* ------------------
       footer style
    ---------------- */
 
 footer {
-  background: #161616;
+  background: #020f1f;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -247,17 +221,16 @@ footer {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
-  padding-top: 130px;
-  margin: 0;
+  padding-top: 100px;
+  margin-bottom: 30px;
 }
 .line hr {
-  margin-top: 50px;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-bottom: 50px;
+  width: 70%;
+  margin: auto;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-item {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   column-gap: 24px;
@@ -278,4 +251,48 @@ footer {
 }
 .social {
   padding-left: 16px;
+}
+
+/* -------------------------------
+     Media Query for tablet Phone 
+   --------------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header-title {
+    padding: 10px;
+  }
+  .blog-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    display: block;
+  }
+  nav,
+  nav button,
+  nav a {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    border-radius: 10px;
+  }
+  .right-side-area {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
+  .blogs {
+    width: 312px;
+    height: 362px;
+    border-radius: 10px;
+  }
+  .footer-item {
+    font-size: 10px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
 }
