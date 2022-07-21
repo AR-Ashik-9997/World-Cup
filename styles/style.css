@@ -55,7 +55,20 @@ body {
   color: #ffffff;
   background: #dd0000;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 24px;  
+}
+.center button:hover{
+  padding: 16px 25px;
+  background-color: red;
+  animation: watch-live infinite;
+  animation-duration: 5s;
+}
+@keyframes watch-live {
+  0% {background: red;}
+  25% {background: green;}
+  50% {background: rgb(6, 99, 122);}
+  75% {background: orange;}
+  100% {background: rgb(7, 139, 128);}  
 }
 .icon {
   font-size: 16px;
