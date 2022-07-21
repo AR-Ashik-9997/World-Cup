@@ -49,7 +49,7 @@ body {
   font-size: 16px;
   margin-bottom: 30px;
 }
-.header-title a {
+.header-btn {
   padding: 16px 25px;
   text-decoration: none;
   color: #ffffff;
@@ -204,6 +204,13 @@ nav button a {
   color: #020f1f;
   margin-top: 10px;
 }
+.button-section button {
+  visibility: hidden;
+  background-color: red;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+}
 
 /* ------------------
       footer style
@@ -249,16 +256,33 @@ footer {
   text-decoration: none;
   color: #ffffff;
 }
+.icon-f:hover {
+  background: #ffffff;
+  color: navy;
+}
+.icon-t:hover {
+  color: #1da1f2;
+}
+.icon-l:hover {
+  color: #0077b0;
+}
 .social {
   padding-left: 16px;
 }
 
 /* -------------------------------
-     Media Query for tablet Phone 
+    Responsive Media Query for tablet Phone 
    --------------------------------*/
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-  .header-title {
-    padding: 10px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header-title h1 {
+    font-size: 40px;
+  }
+  .header-title p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .header-title a {
+    padding: 7px 10px;
   }
   .blog-section {
     width: 80%;
@@ -266,16 +290,32 @@ footer {
     margin-top: 70px;
     display: block;
   }
+  .header-container {
+    width: 720px;
+    height: 400px;
+  }
+  .right-image img {
+    width: 310px;
+    height: 340px;
+  }
+  .side-container {
+    background-color: #ffffff;
+    height: 90%;
+  }
   nav,
   nav button,
   nav a {
     flex-direction: row;
     justify-content: space-around;
     background-color: aliceblue;
+    gap: 30px;
     width: 80%;
-    margin: auto;
+    margin-bottom: 20px;
     height: 70px;
     border-radius: 10px;
+  }
+  .side-container #blog-btn a {
+    color: black;
   }
   .right-side-area {
     grid-template-columns: repeat(2, 1fr);
@@ -288,11 +328,102 @@ footer {
     height: 362px;
     border-radius: 10px;
   }
+  .button-section button {
+    visibility: visible;
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
   .footer-item {
     font-size: 10px;
     color: aliceblue;
     display: flex;
     justify-content: center;
     padding-bottom: 0px;
+  }
+}
+/* --------------------------------------------
+    Responsive Media Query for small phone
+  ------------------------------------------- */
+@media only screen and (max-width: 576px) {
+  .header-container {
+    display: block;
+    background: #010c20;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .banner {
+    width: 90%;
+    margin: auto;
+  }
+  .header-title h1 {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  .header-title p {
+    font-size: 14px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-btn {
+    padding: 7px, 7px;
+  }
+  .header-btn {
+    background-color: #0a8a9b;
+  }
+  .header-btn:hover {
+    font-size: 16px;
+    background: linear-gradient(orange, brown);
+    color: #000102;
+  }
+  .icon:hover {
+    color: azure;
+  }
+  .blog-section {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .right-side-area {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    justify-content: center;
+  }
+  .blog-section {
+    width: 100%;
+    display: block;
+  }
+  .side-container {
+    background-color: #ffffff;
+  }
+  .footer-item {
+    font-size: 10px;
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: 5px;
+  }
+  .footer-item p {
+    padding-top: 20px;
+  }
+  .line {
+    padding-bottom: 0;
   }
 }
